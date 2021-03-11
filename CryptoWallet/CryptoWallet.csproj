@@ -1,0 +1,59 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />  
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+    <PackageReference Include="Autofac" Version="6.1.0" />
+    <PackageReference Include="Microcharts" Version="0.9.5.9" />
+    <PackageReference Include="Microcharts.Forms" Version="0.9.5.9" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.7.335" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Application\" />
+    <Folder Include="Common\" />
+    <Folder Include="Modules\" />
+    <Folder Include="Modules\Wallet\" />
+    <Folder Include="Modules\Assets\" />
+    <Folder Include="Modules\Transactions\" />
+    <Folder Include="Common\Controls\" />
+    <Folder Include="Common\Styles\" />
+    <Folder Include="Common\Controllers\" />
+    <Folder Include="Common\Models\" />
+    <Folder Include="Modules\AddTransaction\" />
+    <Folder Include="Common\Navigation\" />
+    <Folder Include="Common\Base\" />
+    <Folder Include="Common\Converters\" />
+    <Folder Include="Common\Validation\" />
+    <Folder Include="Common\Database\" />
+    <Folder Include="Common\Extensions\" />
+    <Folder Include="Common\Dialog\" />
+    <Folder Include="Common\Network\" />
+    <Folder Include="Modules\Loading\" />
+    <Folder Include="Modules\Onboarding\" />
+    <Folder Include="Modules\Register\" />
+    <Folder Include="Modules\Login\" />
+    <Folder Include="Common\Security\" />
+    <Folder Include="Common\Settings\" />
+    <Folder Include="Common\Localization\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Modules\Onboarding\Onboardingview.xaml.cs">
+      <DependentUpon>Onboardingview.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Modules\Login\LoginView.xaml.cs">
+      <DependentUpon>LoginView.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Modules\Register\RegisterView.xaml.cs">
+      <DependentUpon>RegisterView.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Application\LoginShell.xaml.cs">
+      <DependentUpon>LoginShell.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>
